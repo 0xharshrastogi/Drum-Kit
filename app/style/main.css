@@ -1,0 +1,140 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	position: relative;
+	min-height: 100vh;
+	line-height: 1;
+
+	display: flex;
+	align-items: center;
+}
+
+.title {
+	position: absolute;
+
+	top: 40px;
+
+	width: 100%;
+	font-size: 4rem;
+	color: #dc1c4a;
+	text-align: center;
+
+	z-index: -1;
+
+	animation: grow 350ms ease-in;
+}
+
+@keyframes grow {
+	0% {
+		transform: scale(0.4);
+		opacity: 0.4;
+	}
+
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+.img-wrapper {
+	position: absolute;
+	/* width: 216px; */
+
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	z-index: -1;
+}
+
+.img-wrapper img {
+	animation: scale 20s infinite alternate;
+}
+
+@keyframes scale {
+	100% {
+		transform: scale(1.3);
+	}
+}
+
+.drum-control {
+	height: 80vh;
+	width: 100%;
+	/* background-color: crimson; */
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(5, 1fr);
+	grid-row-gap: 0.5rem;
+}
+
+.row {
+	/* background-color: blue; */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 6vw 0 6vw;
+	/* border: 1px solid #000; */
+}
+
+.row:nth-child(2) {
+	padding-left: 8vw;
+	padding-right: 8vw;
+}
+
+.row:nth-child(3) {
+	padding-left: 10vw;
+	padding-right: 10vw;
+}
+
+.row:nth-child(4) {
+	padding-left: 12vw;
+	padding-right: 12vw;
+}
+
+.row:nth-child(5) .key {
+	width: 40%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.key {
+	height: 70px;
+	width: 70px;
+	border: 1px solid #000;
+	align-items: center;
+	display: flex;
+	flex-flow: column;
+	border: 1px solid #000;
+	justify-content: center;
+	font-size: 2rem;
+
+	background-color: #d0e2ed;
+	color: #dc1c4a;
+	border: 3px solid #dc1c4a;
+	border-radius: 0.5rem;
+
+	transition: all 130ms;
+}
+
+.playing {
+	color: #a51134;
+	border-color: #a51134;
+	box-shadow: 0 0 25px 0 #dc1c4a;
+	background-color: #bccfdb;
+}
+
+@keyframes shadow {
+	100% {
+	}
+}
+
+.key .key-img {
+	height: 50px;
+	width: 50px;
+	border: 1px solid #000;
+}

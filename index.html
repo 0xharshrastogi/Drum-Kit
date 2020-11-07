@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum Kit</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="app/assets/favIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="app/style/main.css">
+</head>
+
+<body>
+    <h1 class="title">
+        Drum Beat
+    </h1>
+
+    <div class="img-wrapper">
+        <img src="app/assets/frontPic.png" alt="Drum Image">
+    </div>
+
+    <main class="drum-control">
+        <section class="row">
+            <div class="key" data-key-action="boom" data-key="Digit1">
+                <div class="key-value">1</div>
+                <audio src="sounds/boom.wav" data-key="Digit1"></audio>
+            </div>
+
+            <div class="key" data-key-action="clap" data-key="Digit0">
+                <div class="key-value">0</div>
+                <audio src="sounds/clap.wav" data-key="Digit0"></audio>
+
+            </div>
+        </section>
+        <section class="row">
+            <div class="key" data-key-action="hihat" data-key="KeyQ">
+                <div class="key-value">Q</div>
+                <audio src="sounds/hihat.wav" data-key="KeyQ"></audio>
+
+            </div>
+
+            <div class="key" data-key-action="kick" data-key="KeyO">
+                <div class="key-value">O</div>
+                <audio src="sounds/kick.wav" data-key="KeyO"></audio>
+
+            </div>
+        </section>
+        <section class="row">
+            <div class="key" data-key-action="openhat" data-key="KeyA">
+                <div class="key-value">A</div>
+                <audio src="sounds/openhat.wav" data-key="KeyA"></audio>
+
+            </div>
+
+            <div class="key" data-key-action="ride" data-key="KeyK">
+                <div class="key-value">K</div>
+                <audio src="sounds/ride.wav" data-key="KeyK"></audio>
+        </section>
+        <section class="row">
+            <div class="key" data-key-action="snare" data-key="KeyZ">
+                <div class="key-value">Z</div>
+                <audio src="sounds/snare.wav" data-key="KeyZ"></audio>
+            </div>
+
+            <div class="key" data-key-action="tink" data-key="KeyM">
+                <div class="key-value">M</div>
+                <audio src="sounds/tink.wav" data-key="KeyM"></audio>
+        </section>
+        <section class="row">
+            <div class="key" data-key-action="torn" data-key="Space">
+                <div class="key-value">SPACE</div>
+                <audio src="sounds/tom.wav" data-key="Space"></audio>
+            </div>
+        </section>
+    </main>
+
+    <script src="app/script/main.js"></script>
+</body>
+
+</html>
