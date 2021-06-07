@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	background-color: chartreuse;
 }
 
 body {
@@ -137,4 +138,8 @@ body {
 	height: 50px;
 	width: 50px;
 	border: 1px solid #000;
+}
+
+.img-wrapper{
+	z-index: 2;
 }
